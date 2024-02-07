@@ -1,14 +1,14 @@
-int size;
+int num;
 public void setup()
 {
   size(600,600);
-  size = 100;
+  num = 100;
 }
 public void draw()
 {
   fill(0);
   background(255);
-  sierpinski(width/2-size/2,width/2+size/2,size);
+  sierpinski(width/2-num/2,width/2+num/2,num);
 }
 public void sierpinski(int x, int y, int len) 
 {
@@ -23,7 +23,7 @@ public void sierpinski(int x, int y, int len)
 }
 void keyPressed(){
   if(keyCode==UP)
-    size+=15;
+    num+=15;
   if(keyCode==DOWN)
-    size-=15;
+    num-=15;
 }
